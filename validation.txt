@@ -1,0 +1,37 @@
+유튜브 다운로더 0.3.0 / 2026-10-31
+Application ID: kr.co.androidtube.pocketsave; versionCode 3, versionName 0.3.0.
+Existing app and signing identity preserved; previous 0.1.0 and 0.2.0 APK hashes unchanged.
+Build: :pocket:testDebugUnitTest :pocket:assembleDebug :pocket:lintDebug -PmoaScreenshots — PASS.
+Tests: 44 passed, 0 failures, 0 errors, 0 skipped (includes native View render test).
+Lint: No issues found.
+APK v2 signature verified, certificate SHA-256 matches prior releases:
+6884b3fb44e930cd53d66c04e545515aee24a185e08eca1ea2705998bcd5449b
+ZIP alignment: zipalign -c -P 16 4 PASS. This does not imply full 16 KB ELF compatibility.
+APK metadata: application label 유튜브 다운로더; package ID unchanged; ARM64.
+
+New checks: user-triggered clipboard autofill, same-clipboard editing preservation,
+invalid clipboard preservation, explicit paste errors, per-format quality memory and intent payload,
+folder picker cancellation, persisted read/write grants, denied/revoked grants, default-folder reset,
+selected-tree publication through Android DocumentsProvider, cancellation, rename failure,
+crash cleanup restricted to staging names, preservation of completed documents and old tree grants.
+Existing link parser, output path bounds, MediaStore transactions and phone UI flow tests retained.
+
+Offline synthetic audio/media test: bundled yt-dlp plus HOST ffmpeg/ffprobe.
+This verifies encoding arguments and resultant files, not Android native execution or live YouTube.
+video720  OK media.mp4 ['video', 'audio'] audio_bitrate=241311
+m4a original OK media.m4a ['audio'] audio_bitrate=241311
+mp3 128 OK media.mp3 ['audio'] audio_bitrate=128000
+mp3 192 OK media.mp3 ['audio'] audio_bitrate=192000
+mp3 256 OK media.mp3 ['audio'] audio_bitrate=256000
+mp3 320 OK media.mp3 ['audio'] audio_bitrate=320000
+m4a 128 OK media.encoded.m4a ['audio'] audio_bitrate=128316
+m4a 192 OK media.encoded.m4a ['audio'] audio_bitrate=192080
+m4a 256 OK media.encoded.m4a ['audio'] audio_bitrate=259494
+
+Source audio has finite original quality. Bitrate choices are encoding targets, not quality restoration.
+M4A numeric options explicitly re-encode; original preference does not force an additional pass.
+
+Physical S23 install, Samsung document picker, native Android conversion and live YouTube downloads
+were not tested here. Previous YouTube network probe was blocked by the cloud proxy (403).
+Target remains Android 11+ ARM64 / 4 KB memory pages; 16 KB native-library limit retained.
+No changes to existing car apps. No extra broad storage permission.
