@@ -1,0 +1,32 @@
+{
+  "app": "유튜브 다운로더",
+  "version": "0.3.2",
+  "versionCode": 5,
+  "package": "kr.co.androidtube.pocketsave",
+  "bytes": 61308491,
+  "sha256": "892779cd42583997235fd939af3e98dfad045f2009e9ba3008697fe0738e59f7",
+  "certificateSha256": "6884b3fb44e930cd53d66c04e545515aee24a185e08eca1ea2705998bcd5449b",
+  "signatureMatches031": true,
+  "permissionsUnchanged": true,
+  "nativeLibrariesMatch031": true,
+  "tests": {
+    "passed": 63,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 1
+  },
+  "skippedReason": "Optional native design preview not requested for this behavior change",
+  "lint": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "libraryCleanup": "Background query on library entry, activity resume, explicit refresh; only confirmed missing records removed",
+  "keepsInaccessibleEntries": true,
+  "queriesDeleteFiles": false,
+  "safTreeReadGrantRequired": true,
+  "concurrentNewDownloadsPreserved": true,
+  "completedLinkClearPreserved": true,
+  "engineChanged": false,
+  "physicalPhoneTested": false,
+  "liveYoutubeDownloadTested": false
+}
