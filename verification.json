@@ -1,0 +1,43 @@
+{
+  "app": "유튜브 다운로더",
+  "version": "0.4.0",
+  "versionCode": 6,
+  "package": "kr.co.androidtube.pocketsave",
+  "bytes": 61491973,
+  "sha256": "4de55ca2f921968422c4dbd943eeda45f7f47a6c1d81f73d83ea094da9bc36c0",
+  "certificateSha256": "6884b3fb44e930cd53d66c04e545515aee24a185e08eca1ea2705998bcd5449b",
+  "signatureMatches032": true,
+  "permissionsUnchanged": true,
+  "nativeLibrariesMatch032": true,
+  "tests": {
+    "passed": 86,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "search": {
+    "maxResults": 15,
+    "maxQueryCharacters": 120,
+    "deadlineSeconds": 60,
+    "apiKeyRequired": false,
+    "automaticSearch": false,
+    "selectionStartsDownload": false,
+    "cancelAndLateResponseTested": true,
+    "rotationTested": true
+  },
+  "syntheticDesignPreviewsReviewed": [
+    "default",
+    "320dp-font130"
+  ],
+  "completedLinkClearPreserved": true,
+  "missingLibraryEntryCleanupPreserved": true,
+  "engineChanged": false,
+  "physicalPhoneTested": false,
+  "liveYoutubeSearchTested": false,
+  "liveYoutubeDownloadTested": false,
+  "liveVerificationLimitation": "Cloud network proxy rejected YouTube HTTPS CONNECT with HTTP 403; real YouTube results and phone download remain unverified."
+}
